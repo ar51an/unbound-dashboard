@@ -71,7 +71,7 @@
 
 #
 #### ❯ Unbound Exporter
-* I wrote my own exporter in `Go`. It is more efficient and tailored for this dashboard. A prebuilt binary (for arm64) is available in the release. Source code is available at this repo.
+* I wrote my own exporter in `Go`. It is more efficient and tailored for this dashboard. A prebuilt binary (for arm64) is available in the release. Source code is available at [unbound-exporter](https://github.com/ar51an/unbound-exporter).
 
 * **Config:**  
   Edit `/etc/unbound/unbound.conf`
