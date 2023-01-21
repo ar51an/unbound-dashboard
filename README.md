@@ -1,8 +1,13 @@
 ## unbound dashboard
 <div align="center">
 
-</div>
-<div align="center">
+![unbound](https://img.shields.io/badge/-unbound‑dashboard-D8BFD8?logo=unrealengine&logoColor=3a3a3d)
+&nbsp;&nbsp;[![release](https://img.shields.io/github/v/release/ar51an/unbound-dashboard?display_name=release&logo=rstudio&color=90EE90&logoColor=8FBC8F)](https://github.com/ar51an/unbound-dashboard/releases/latest/)
+&nbsp;&nbsp;![downloads](https://img.shields.io/github/downloads/ar51an/unbound-dashboard/total?color=orange&label=downloads&logo=github)
+&nbsp;&nbsp;![visitors](https://shields-io-visitor-counter.herokuapp.com/badge?page=ar51an.unbound-dashboard&label=visitors&logo=github&color=4883c2)
+&nbsp;&nbsp;![license](https://img.shields.io/github/license/ar51an/unbound-dashboard?color=CED8E1)
+
+<br/>
 
 ![Dark](https://user-images.githubusercontent.com/11185794/213832958-6cf3536c-6ef8-419d-9c51-aa2c91548d61.png)
 
