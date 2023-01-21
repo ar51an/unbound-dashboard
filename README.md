@@ -21,7 +21,7 @@
 🔸 Unbound dashboard in `Grafana`  
 🔸 `Prometheus` time series data source  
 🔸 Unbound metrics exporter in `Go`  
-🔸 Unbound setup is available at [unbound-redis](https://github.com/ar51an/unbound-redis)
+🔸 Unbound `setup` is available at [unbound-redis](https://github.com/ar51an/unbound-redis)
 
 #### Specs:
 > |Grafana|Prometheus|Go      |OS                           |HW                      |
