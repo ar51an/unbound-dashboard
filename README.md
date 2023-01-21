@@ -9,11 +9,11 @@
 
 <br/>
 
-![Dark](https://user-images.githubusercontent.com/11185794/213832958-6cf3536c-6ef8-419d-9c51-aa2c91548d61.png)
+![Dark](https://user-images.githubusercontent.com/11185794/213861987-28fe6e43-4021-454d-95e8-58e878ddbe89.png)
 
 <br/>
 
-![Light](https://user-images.githubusercontent.com/11185794/213833009-53f6e570-d52d-45c3-bc28-6883076614f4.png)
+![Light](https://user-images.githubusercontent.com/11185794/213861993-465a2ae2-5ee5-40cb-b60e-e845f8891ce2.png)
 </div>
 <div align="justify">
 
