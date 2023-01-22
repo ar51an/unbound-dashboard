@@ -106,7 +106,7 @@
 * **Usage:**
   > `unbound-exporter -h`  
   >
-  > ![Usage](https://user-images.githubusercontent.com/11185794/213671299-80abb4a1-cf20-4c4d-89e5-cb8738bf9203.png)
+  > ![Usage](https://user-images.githubusercontent.com/11185794/213899374-457728c8-c92a-4280-b638-5116d165f934.png)
 
 #
 #### ❯ Import Dashboard
@@ -134,7 +134,7 @@
   > Change `UI Theme`
 
   There is an additional panel in the dashboard at the top right, not visible in the preview. It shows _unbound-exporter_ status and may be beneficial. If you are not interested in that simply remove it. Screenshot below:  
-  > ![Metrics](https://user-images.githubusercontent.com/11185794/213671403-2ad0d25d-c9de-47f9-a9c9-b1000f4b2069.png)
+  > ![Metrics](https://user-images.githubusercontent.com/11185794/213899342-9065ecbc-11c8-4abf-9090-a2d1a27be0ea.png)
 
 * **Prometheus:**  
   How to ➟ `Remove` time series (metrics) collected by prometheus instantly for fresh start **&** Reduce prometheus journal `logging`.
@@ -156,7 +156,7 @@
   > Open Prometheus UI ➟ `http://<RP-IP>:9090/`  
   > Select `Status > Targets`  
   >
-  > ![Status](https://user-images.githubusercontent.com/11185794/213671471-c0fcb7cc-07e5-427a-88bc-818c7ba7f33e.png)
+  > ![Status](https://user-images.githubusercontent.com/11185794/213899326-fcc86252-53a1-42b1-819d-b82361069d22.png)
 
 #
 #### ❯ Cmds
