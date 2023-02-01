@@ -182,7 +182,7 @@ Add _Loki_ to the stack and create live monitoring dashboard.
 <details>
   <summary>Spoiler Alert</summary>
   
-  <sub>**_* Not included in the release_**</sub>
+  <sub>**_* Not included in the current release_**</sub>
   
   ![Future-Dark](https://user-images.githubusercontent.com/11185794/215806047-ae9c7d3b-f2b3-4822-9eb8-a439506b4a0b.png)
 </details>
