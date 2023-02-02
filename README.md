@@ -9,11 +9,10 @@
 
 <br/>
 
-![Dark](https://user-images.githubusercontent.com/11185794/213861987-28fe6e43-4021-454d-95e8-58e878ddbe89.png)
+![Dark](https://user-images.githubusercontent.com/11185794/215806047-ae9c7d3b-f2b3-4822-9eb8-a439506b4a0b.png)
 
 <br/>
 
-![Light](https://user-images.githubusercontent.com/11185794/213861993-465a2ae2-5ee5-40cb-b60e-e845f8891ce2.png)
 </div>
 <div align="justify">
 
@@ -21,8 +20,8 @@
 🔸 Unbound dashboard in `Grafana`  
 🔸 `Prometheus` time series data source  
 🔸 Unbound metrics exporter in `Go`  
-🔸 Unbound `setup` is available at [unbound-redis](https://github.com/ar51an/unbound-redis)  
-🔸 [What's next](https://github.com/ar51an/unbound-dashboard#whats-next)
+🔸 Live monitoring with `Loki`  
+🔸 Unbound `setup` is available at [unbound-redis](https://github.com/ar51an/unbound-redis)
 
 #### Specs:
 > |Grafana|Prometheus|Go      |OS                           |HW                      |
@@ -31,7 +30,7 @@
 
 #
 ### Steps
-&nbsp;&nbsp;🔸 Grafana ➜ Prometheus ➜ Unbound Exporter ➜ Import Dashboard
+&nbsp;&nbsp;🔸 Grafana ➜ Prometheus ➜ Unbound Exporter ➜ Loki ➜ Import Dashboard
 #### ❯ Grafana
 * **Download:**  
   There are 2 versions **OSS** and **Enterprise**. OSS version is more than enough. Enterprise version installs too many extra packages (like unattended-upgrades and more). Below cmd downloads _Grafana OSS_ for arm64.
@@ -110,6 +109,9 @@
   > ![Usage](https://user-images.githubusercontent.com/11185794/213899374-457728c8-c92a-4280-b638-5116d165f934.png)
 
 #
+#### ❯ Loki
+
+#
 #### ❯ Import Dashboard
 * Open Grafana UI ➟ `http://<RP-IP>:3000/`
 
@@ -175,15 +177,4 @@
   > `sudo systemctl status prometheus`  
   > Tail Log:  
   > `sudo journalctl -u prometheus -n 200 -f`
-
-#
-### What's Next
-Add _Loki_ to the stack and create live monitoring dashboard.
-<details>
-  <summary>Spoiler Alert</summary>
-  
-  <sub>**_* Not included in the release_**</sub>
-  
-  ![Future-Dark](https://user-images.githubusercontent.com/11185794/215806047-ae9c7d3b-f2b3-4822-9eb8-a439506b4a0b.png)
-</details>
 </div>
