@@ -137,7 +137,7 @@
   > Change `UI Theme`
 
   There is an additional panel in the dashboard at the top right, not visible in the preview. It shows _unbound-exporter_ status and may be beneficial. If you are not interested in that simply remove it. Screenshot below:  
-  > ![Metrics](https://user-images.githubusercontent.com/11185794/213899342-9065ecbc-11c8-4abf-9090-a2d1a27be0ea.png)
+  > ![Metrics](https://user-images.githubusercontent.com/11185794/216548586-a53c64dd-6223-4950-ae7f-621dba355fd8.png)
 
 * **Prometheus:**  
   How to ➟ `Remove` time series (metrics) collected by prometheus instantly for fresh start **&** Reduce prometheus journal `logging`.
