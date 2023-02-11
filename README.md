@@ -1,4 +1,4 @@
-## unbound dashboard - [In Progress ...]
+## unbound dashboard
 <div align="center">
 
 ![unbound](https://img.shields.io/badge/-unbound‑dashboard-D8BFD8?logo=unrealengine&logoColor=3a3a3d)
@@ -6,6 +6,7 @@
 &nbsp;&nbsp;![downloads](https://img.shields.io/github/downloads/ar51an/unbound-dashboard/total?color=orange&label=downloads&logo=github)
 &nbsp;&nbsp;![visitors](https://shields-io-visitor-counter.herokuapp.com/badge?page=ar51an.unbound-dashboard&label=visitors&logo=github&color=4883c2)
 &nbsp;&nbsp;![license](https://img.shields.io/github/license/ar51an/unbound-dashboard?color=CED8E1)
+</div>
 
 <br/>
 
