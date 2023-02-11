@@ -22,7 +22,6 @@
 🔸 `Prometheus` time series data source  
 🔸 Unbound metrics exporter in `Go`  
 🔸 Unbound `setup` is available at [unbound-redis](https://github.com/ar51an/unbound-redis)  
-🔸 [What's next](https://github.com/ar51an/unbound-dashboard#whats-next)
 
 #### Specs:
 > |Grafana|Prometheus|Go      |OS                           |HW                      |
@@ -175,15 +174,4 @@
   > `sudo systemctl status prometheus`  
   > Tail Log:  
   > `sudo journalctl -u prometheus -n 200 -f`
-
-#
-### What's Next
-Add _Loki_ to the stack and create live monitoring dashboard.
-<details>
-  <summary>Spoiler Alert</summary>
-  
-  <sub>**_* Not included in the release_**</sub>
-  
-  ![Future-Dark](https://user-images.githubusercontent.com/11185794/215806047-ae9c7d3b-f2b3-4822-9eb8-a439506b4a0b.png)
-</details>
 </div>
