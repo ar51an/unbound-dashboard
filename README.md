@@ -9,12 +9,12 @@
 
 <br/>
 
-![Dark](placeholder)
+![Dark](https://user-images.githubusercontent.com/11185794/218242654-04f172f5-ff63-4db8-83e6-e6ee9fb28262.png)
 
 <details>
   <summary>Light Theme</summary>
     
-  ![Light](placeholder)
+  ![Light](https://user-images.githubusercontent.com/11185794/218242661-795aa79b-f1b0-47f7-a011-822a4e0b51c6.png)
 </details>
 
 <div align="center">
