@@ -10,12 +10,13 @@
 
 <br/>
 
-![Dark](https://user-images.githubusercontent.com/11185794/218242654-04f172f5-ff63-4db8-83e6-e6ee9fb28262.png)
+![Dark](https://user-images.githubusercontent.com/11185794/220276925-6a1f4e0c-e6ec-443d-9ccf-cc3eb5da3405.png)
 
 <details>
   <summary>Light Theme</summary>
-    
-  ![Light](https://user-images.githubusercontent.com/11185794/218242661-795aa79b-f1b0-47f7-a011-822a4e0b51c6.png)
+
+  ![Light](https://user-images.githubusercontent.com/11185794/220276981-82c05a6d-0c26-4473-a8aa-902b58237ad3.png)
+
 </details>
 
 <div align="center">
@@ -29,7 +30,8 @@
 🔸 `Prometheus` time series database  
 🔸 Unbound metrics exporter in `Go`  
 🔸 Log aggregation with `Loki`  
-🔸 Unbound `setup` is available at [unbound-redis](https://github.com/ar51an/unbound-redis)
+🔸 Unbound `setup` is available at [unbound-redis](https://github.com/ar51an/unbound-redis)  
+🔸 Refer to `info.md` for dashboard details
 
 #### Specs:
 > |Grafana|Prometheus|Loki   |Go      |OS                           |HW                      |
