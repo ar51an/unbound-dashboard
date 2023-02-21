@@ -29,7 +29,8 @@
 🔸 `Prometheus` time series database  
 🔸 Unbound metrics exporter in `Go`  
 🔸 Log aggregation with `Loki`  
-🔸 Unbound `setup` is available at [unbound-redis](https://github.com/ar51an/unbound-redis)
+🔸 Unbound `setup` is available at [unbound-redis](https://github.com/ar51an/unbound-redis)  
+🔸 Refer `info.md` for details
 
 #### Specs:
 > |Grafana|Prometheus|Loki   |Go      |OS                           |HW                      |
