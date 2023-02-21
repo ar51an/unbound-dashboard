@@ -47,7 +47,7 @@ Bar graphs show stats for last 24 hrs with 30 minutes interval. Each bar represe
 
 ![client-requests-mapped](https://user-images.githubusercontent.com/11185794/220220888-0950aebf-bc65-44e4-baf6-e54024ce1f53.png)
 
-🔹 `Live Clients` shows active clients
+🔹 `Live Clients` show active clients
   
 ![live-clients](https://user-images.githubusercontent.com/11185794/220217145-79888d69-b51b-419b-aa02-6168c860e500.png)
 
@@ -81,7 +81,7 @@ Table shows live blocked domains for last 24 hrs. Dashboard auto refresh interva
 </div>
 
 #### ❯ Top Client Queries / Live Queries / Live Blocked
-**IPs** under _Client_ coulmn can be mapped to **hostnames**. Add `Overrides` ➟ `Value mappings` for _Client_ column.
+**IPs** under _Client_ column can be mapped to **hostnames**. Add `Overrides` ➟ `Value mappings` for _Client_ column.
 
 🔹 `Top Client Queries` IPs mapped to hostnames
 
