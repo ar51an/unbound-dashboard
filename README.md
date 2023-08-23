@@ -36,7 +36,7 @@
 #### Specs:
 > |Grafana|Prometheus|Loki   |Go      |OS                           |HW                      |
 > |:------|:---------|:------|:-------|:----------------------------|:-----------------------|
-> |`9.3.6`|`2.24.1`  |`2.7.3`|`1.19.4`|`raspios-bullseye-arm64-lite`|`Raspberry Pi 4 Model B`|
+> |`9.3.16`|`2.24.1`  |`2.7.3`|`1.19.4`|`raspios-bullseye-arm64-lite`|`Raspberry Pi 4 Model B`|
 
 #
 ### Steps
@@ -44,10 +44,10 @@
 #### ❯ Grafana
 * **Download:**  
   There are 2 versions **OSS** and **Enterprise**. OSS version is more than enough. Enterprise version installs too many extra packages (like unattended-upgrades and more). Below cmd downloads _Grafana OSS_ for arm64.
-  > `wget https://dl.grafana.com/oss/release/grafana_9.3.6_arm64.deb`
+  > `wget https://dl.grafana.com/oss/release/grafana_9.3.16_arm64.deb`
 
 * **Install:**
-  > `sudo dpkg -i grafana_9.3.6_arm64.deb`
+  > `sudo dpkg -i grafana_9.3.16_arm64.deb`
 
   > `ℹ️` **Note:**  
   > A tweaked `grafana.ini` is available in the release. It reduces memory footprint, removes usage collection, stops calls to grafana server/repo and has few more optimizations. You can use _grafana.ini_ **either** from the release **or** the default one. Default config is located at `/etc/grafana/grafana.ini`
