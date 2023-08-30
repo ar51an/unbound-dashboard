@@ -125,12 +125,12 @@
 #### ❯ Loki
 * **Download:**  
   Download `Loki` and `Promtail`
-  > `curl -O -L "https://github.com/grafana/loki/releases/download/v2.7.3/loki_2.7.3_arm64.deb"`  
-  > `curl -O -L "https://github.com/grafana/loki/releases/download/v2.7.3/promtail_2.7.3_arm64.deb"`
+  > `curl -O -L "https://github.com/grafana/loki/releases/download/v2.8.4/loki_2.8.4_arm64.deb"`  
+  > `curl -O -L "https://github.com/grafana/loki/releases/download/v2.8.4/promtail_2.8.4_arm64.deb"`
 
 * **Install:**
-  > `sudo dpkg -i loki_2.7.3_arm64.deb`  
-  > `sudo dpkg -i promtail_2.7.3_arm64.deb`
+  > `sudo dpkg -i loki_2.8.4_arm64.deb`  
+  > `sudo dpkg -i promtail_2.8.4_arm64.deb`
 
 * **Logging:**  
   Enable Unbound logging.
