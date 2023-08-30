@@ -64,7 +64,7 @@
 #
 #### ❯ Prometheus
 * **Install:**
-  > `sudo apt install prometheus`
+  > `sudo apt install prometheus/bullseye-backports`
 
 * **Config:**  
   Enable _unbound-exporter_ scraping in prometheus. A trimmed down prometheus config, `prometheus.yml` is available in the release. Take a backup of existing _prometheus.yml_, if you are interested in the default config. Copy `prometheus.yml` from the release to `/etc/prometheus/` dir.
