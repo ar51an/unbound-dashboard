@@ -31,7 +31,7 @@
 🔸 Unbound metrics exporter in `Go`  
 🔸 Log aggregation with `Loki`  
 🔸 Unbound `setup` is available at [unbound-redis](https://github.com/ar51an/unbound-redis)  
-🔸 Refer to `info.md` for dashboard details and `release.md` for release notes
+🔸 Refer to `info.md` for dashboard details and `release.md` for changes
 
 #### Specs:
 > |Grafana|Prometheus|Loki   |Go      |OS                           |HW                      |
