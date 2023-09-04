@@ -63,10 +63,10 @@
 
 #
 #### ❯ Prometheus
-* **Install:**
+* **Install:**  
+  Install prometheus (2.33.5) from RaspiOS bullseye backports. Make sure backports are enabled.  
   > `sudo apt install prometheus/bullseye-backports`
 
-  > `ℹ️` **Note:**  
   > **Enable backports:**  
   > `sudo nano /etc/apt/sources.list`  
   > **Add at the end:**  
