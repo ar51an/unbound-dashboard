@@ -31,7 +31,7 @@
 🔸 Unbound metrics exporter in `Go`  
 🔸 Log aggregation with `Loki`  
 🔸 Unbound `setup` is available at [unbound-redis](https://github.com/ar51an/unbound-redis)  
-🔸 Refer to `info.md` for dashboard details
+🔸 Refer to `info.md` for dashboard details and `release.md` for release notes
 
 #### Specs:
 > |Grafana|Prometheus|Loki   |Go      |OS                           |HW                      |
@@ -66,6 +66,12 @@
 * **Install:**
   > `sudo apt install prometheus/bullseye-backports`
 
+  > `ℹ️` **Note:**  
+  > **Enable backports:**  
+  > `sudo nano /etc/apt/sources.list`  
+  > **Add at the end:**  
+  > `deb http://deb.debian.org/debian bullseye-backports main`
+
 * **Config:**  
   Enable _unbound-exporter_ scraping in prometheus. A trimmed down prometheus config, `prometheus.yml` is available in the release. Take a backup of existing _prometheus.yml_, if you are interested in the default config. Copy `prometheus.yml` from the release to `/etc/prometheus/` dir.
 
@@ -76,7 +82,7 @@
   Node exporter exports machine metrics. It is installed as part of prometheus pkg and runs as systemd service. It is not needed for _unbound-dashboard_. Unless you are already using it, remove node exporter. Below cmd will remove 8 node-exporter related pkgs. 
   > **Remove:**  
   > `sudo apt --purge autoremove prometheus-node-exporter`  
-  > **Disable Scrape Config:**  
+  > **Disable scrape config:**  
   > Provided `prometheus.yml` has _node_ exporter scrapping config removed. 
 
 * **UI:**
