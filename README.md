@@ -34,9 +34,9 @@
 🔸 Refer to `info.md` for dashboard details and `release.md` for changes
 
 #### Specs:
-> |Grafana|Prometheus|Loki   |Go      |OS                           |HW                      |
-> |:------|:---------|:------|:-------|:----------------------------|:-----------------------|
-> |`10.1.0`|`2.33.5`  |`2.8.4`|`1.19.4`|`raspios-bullseye-arm64-lite`|`Raspberry Pi 4 Model B`|
+> |Grafana |Prometheus|Loki   |Go      |OS                           |HW                      |
+> |:-------|:---------|:------|:-------|:----------------------------|:-----------------------|
+> |`10.1.0`|`2.42.0`  |`2.8.4`|`1.21.5`|`raspios-bookworm-arm64-lite`|`Raspberry Pi 4 Model B`|
 
 #
 ### Steps
@@ -64,13 +64,7 @@
 #
 #### ❯ Prometheus
 * **Install:**  
-  Install prometheus (2.33.5) from RaspiOS bullseye backports. Make sure backports are enabled.  
-  > `sudo apt install prometheus/bullseye-backports`
-
-  > **Enable backports:**  
-  > `sudo nano /etc/apt/sources.list`  
-  > **Add at the end:**  
-  > `deb http://deb.debian.org/debian bullseye-backports main`
+  > `sudo apt install prometheus`
 
 * **Config:**  
   Enable _unbound-exporter_ scraping in prometheus. A trimmed down prometheus config, `prometheus.yml` is available in the release. Take a backup of existing _prometheus.yml_, if you are interested in the default config. Copy `prometheus.yml` from the release to `/etc/prometheus/` dir.
