@@ -31,12 +31,12 @@
 🔸 Unbound metrics exporter in `Go`  
 🔸 Log aggregation with `Loki`  
 🔸 Unbound `setup` is available at [unbound-redis](https://github.com/ar51an/unbound-redis)  
-🔸 Refer to `info.md` for dashboard details
+🔸 Refer to `info.md` for dashboard details and `release.md` for changes
 
 #### Specs:
-> |Grafana|Prometheus|Loki   |Go      |OS                           |HW                      |
-> |:------|:---------|:------|:-------|:----------------------------|:-----------------------|
-> |`9.3.16`|`2.24.1`  |`2.7.3`|`1.19.4`|`raspios-bullseye-arm64-lite`|`Raspberry Pi 4 Model B`|
+> |Grafana |Prometheus|Loki   |Go      |OS                           |HW                      |
+> |:-------|:---------|:------|:-------|:----------------------------|:-----------------------|
+> |`10.1.0`|`2.42.0`  |`2.8.4`|`1.21.5`|`raspios-bookworm-arm64-lite`|`Raspberry Pi 4 Model B`|
 
 #
 ### Steps
@@ -44,10 +44,10 @@
 #### ❯ Grafana
 * **Download:**  
   There are 2 versions **OSS** and **Enterprise**. OSS version is more than enough. Enterprise version installs too many extra packages (like unattended-upgrades and more). Below cmd downloads _Grafana OSS_ for arm64.
-  > `wget https://dl.grafana.com/oss/release/grafana_9.3.16_arm64.deb`
+  > `wget https://dl.grafana.com/oss/release/grafana_10.1.0_arm64.deb`
 
 * **Install:**
-  > `sudo dpkg -i grafana_9.3.16_arm64.deb`
+  > `sudo dpkg -i grafana_10.1.0_arm64.deb`
 
   > `ℹ️` **Note:**  
   > A tweaked `grafana.ini` is available in the release. It reduces memory footprint, removes usage collection, stops calls to grafana server/repo and has few more optimizations. You can use _grafana.ini_ **either** from the release **or** the default one. Default config is located at `/etc/grafana/grafana.ini`
@@ -63,7 +63,7 @@
 
 #
 #### ❯ Prometheus
-* **Install:**
+* **Install:**  
   > `sudo apt install prometheus`
 
 * **Config:**  
@@ -76,7 +76,7 @@
   Node exporter exports machine metrics. It is installed as part of prometheus pkg and runs as systemd service. It is not needed for _unbound-dashboard_. Unless you are already using it, remove node exporter. Below cmd will remove 8 node-exporter related pkgs. 
   > **Remove:**  
   > `sudo apt --purge autoremove prometheus-node-exporter`  
-  > **Disable Scrape Config:**  
+  > **Disable scrape config:**  
   > Provided `prometheus.yml` has _node_ exporter scrapping config removed. 
 
 * **UI:**
@@ -125,12 +125,12 @@
 #### ❯ Loki
 * **Download:**  
   Download `Loki` and `Promtail`
-  > `curl -O -L "https://github.com/grafana/loki/releases/download/v2.7.3/loki_2.7.3_arm64.deb"`  
-  > `curl -O -L "https://github.com/grafana/loki/releases/download/v2.7.3/promtail_2.7.3_arm64.deb"`
+  > `curl -O -L "https://github.com/grafana/loki/releases/download/v2.8.4/loki_2.8.4_arm64.deb"`  
+  > `curl -O -L "https://github.com/grafana/loki/releases/download/v2.8.4/promtail_2.8.4_arm64.deb"`
 
 * **Install:**
-  > `sudo dpkg -i loki_2.7.3_arm64.deb`  
-  > `sudo dpkg -i promtail_2.7.3_arm64.deb`
+  > `sudo dpkg -i loki_2.8.4_arm64.deb`  
+  > `sudo dpkg -i promtail_2.8.4_arm64.deb`
 
 * **Logging:**  
   Enable Unbound logging.
