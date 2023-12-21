@@ -1,7 +1,7 @@
 #### Release Notes:
 * **2.2 Release:**  
   Updated dashboard to support Grafana 10.1.0  
-  unbound-exporter compiled with Golang 1.21.5
+  unbound-exporter compiled with Golang 1.21.5  
   Updated documentation to reflect RaspberryPi OS Bookworm changes
 
 * **2.1 Release:**  
