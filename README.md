@@ -87,14 +87,26 @@
 * I wrote my own exporter in `Go`. It is more efficient and tailored for this dashboard. A prebuilt binary (for arm64) is available in the release. Source code is available at [unbound-exporter](https://github.com/ar51an/unbound-exporter).
 
 * **Config:**  
+  * We need to give write permissions to unix socket for Unbound running under chroot (for compiled locally version it can vary)
+    > `sudo vim /etc/apparmor.d/local/usr.sbin.unbound`
+
+    * Add next line:
+    ```ssh
+    /var/run/unbound.sock rw,
+    ```
+
+    * Apply it
+    > `sudo apparmor_parser -r /etc/apparmor.d/usr.sbin.unbound`
+
   Modify Unbound config. Edit `/etc/unbound/unbound.conf`
-  * Enable extended stats. Add option under **`server:`** tag  
+  * Enable extended stats. Add option under **`server:`** tag
     > `extended-statistics: yes`
 
-  * Enable Unix domain socket for collecting stats. It is faster than default TCP. Add below options under **`remote-control:`** tag  
-    > `control-interface: "/var/run/unbound.sock"`  
-    > `control-use-cert: no`
-
+  * Enable Unix domain socket for collecting stats. It is faster than default TCP. Add below options under **`remote-control:`** tag
+    ```ssh
+    control-interface: "/var/run/unbound.sock"
+    control-use-cert: no
+    ```
 * **Install:**  
   Copy `unbound-exporter` binary from the release to `/usr/local/bin/` dir. Make sure it is under ownership of root and executable.
   > **Change ownership [If needed]:**  
@@ -134,7 +146,18 @@
 
 * **Logging:**  
   Enable Unbound logging.
-  * Edit `/etc/unbound/unbound.conf`. Add/Modify below options under **`server:`** tag  
+  * We need write permissions for `unbound.log` for Unbound running under chroot (for compiled locally version it can vary)
+    > `sudo vim /etc/apparmor.d/local/usr.sbin.unbound`
+
+    * Add next line:
+    ```ssh
+    /var/log/unbound/unbound.log rw,
+    ```
+
+    * Apply it
+    > `sudo apparmor_parser -r /etc/apparmor.d/usr.sbin.unbound`
+
+  * Edit `/etc/unbound/unbound.conf`. Add/Modify below options under **`server:`** tag
     > `log-replies: yes`  
     > `log-tag-queryreply: yes`  
     > `log-local-actions: yes`  
