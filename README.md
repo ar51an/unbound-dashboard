@@ -47,6 +47,11 @@
   > `https://dl.grafana.com/oss/release/grafana_11.0.0_arm64.deb`
 
 * **Install:**
+  > `sudo apt install musl`
+  
+  > `ℹ️` **Note:**  
+  > Install `musl` package on RaspberryPi. It is required since _Grafana 10.2.3_
+
   > `sudo dpkg -i grafana_11.0.0_arm64.deb`
 
   > `ℹ️` **Note:**  
