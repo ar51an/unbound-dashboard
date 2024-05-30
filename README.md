@@ -36,7 +36,7 @@
 #### Specs:
 > |Grafana |Prometheus|Loki   |Go      |OS                           |HW                      |
 > |:-------|:---------|:------|:-------|:----------------------------|:-----------------------|
-> |`10.1.0`|`2.42.0`  |`2.8.4`|`1.21.5`|`raspios-bookworm-arm64-lite`|`Raspberry Pi 4 Model B`|
+> |`11.0.0`|`2.42.0`  |`3.0.0`|`1.21.5`|`raspios-bookworm-arm64-lite`|`Raspberry Pi 4 Model B`|
 
 #
 ### Steps
@@ -44,10 +44,10 @@
 #### ❯ Grafana
 * **Download:**  
   There are 2 versions **OSS** and **Enterprise**. OSS version is more than enough. Enterprise version installs too many extra packages (like unattended-upgrades and more). Below cmd downloads _Grafana OSS_ for arm64.
-  > `wget https://dl.grafana.com/oss/release/grafana_10.1.0_arm64.deb`
+  > `https://dl.grafana.com/oss/release/grafana_11.0.0_arm64.deb`
 
 * **Install:**
-  > `sudo dpkg -i grafana_10.1.0_arm64.deb`
+  > `sudo dpkg -i grafana_11.0.0_arm64.deb`
 
   > `ℹ️` **Note:**  
   > A tweaked `grafana.ini` is available in the release. It reduces memory footprint, removes usage collection, stops calls to grafana server/repo and has few more optimizations. You can use _grafana.ini_ **either** from the release **or** the default one. Default config is located at `/etc/grafana/grafana.ini`
@@ -125,12 +125,12 @@
 #### ❯ Loki
 * **Download:**  
   Download `Loki` and `Promtail`
-  > `curl -O -L "https://github.com/grafana/loki/releases/download/v2.8.4/loki_2.8.4_arm64.deb"`  
-  > `curl -O -L "https://github.com/grafana/loki/releases/download/v2.8.4/promtail_2.8.4_arm64.deb"`
+  > `curl -O -L "https://github.com/grafana/loki/releases/download/v3.0.0/loki_3.0.0_arm64.deb"`  
+  > `curl -O -L "https://github.com/grafana/loki/releases/download/v3.0.0/promtail_3.0.0_arm64.deb"`
 
 * **Install:**
-  > `sudo dpkg -i loki_2.8.4_arm64.deb`  
-  > `sudo dpkg -i promtail_2.8.4_arm64.deb`
+  > `sudo dpkg -i loki_3.0.0_arm64.deb`  
+  > `sudo dpkg -i promtail_3.0.0_arm64.deb`
 
 * **Logging:**  
   Enable Unbound logging.
