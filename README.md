@@ -44,13 +44,13 @@
 #### ❯ Grafana
 * **Download:**  
   There are 2 versions **OSS** and **Enterprise**. OSS version is more than enough. Enterprise version installs too many extra packages (like unattended-upgrades and more). Below cmd downloads _Grafana OSS_ for arm64.
-  > `https://dl.grafana.com/oss/release/grafana_11.1.0_arm64.deb`
+  > `wget https://dl.grafana.com/oss/release/grafana_11.1.0_arm64.deb`
 
 * **Install:**
   > `sudo apt install musl`
   
   > `ℹ️` **Note:**  
-  > Install `musl` package on RaspberryPi. It is required since _Grafana 10.2.3_
+  > `musl` package is required since _Grafana 10.2.3_
 
   > `sudo dpkg -i grafana_11.1.0_arm64.deb`
 
