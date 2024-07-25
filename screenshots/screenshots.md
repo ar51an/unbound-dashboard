@@ -1,4 +1,4 @@
-#### ❯ Unbound Dashboard v2.2
+#### ❯ Dashboard v2.2
 
 ![Dark](https://user-images.githubusercontent.com/11185794/220276925-6a1f4e0c-e6ec-443d-9ccf-cc3eb5da3405.png)
 
