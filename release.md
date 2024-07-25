@@ -1,13 +1,10 @@
 #### Release Notes:
 * **2.3 Release:**  
-  - Updated dashboard to support Grafana 11.1.0. It includes layout and functional changes.  
-  - Supports Loki 3.1.0. Config changes to support new schema and removed deprecated options.  
-  - Check the [screenshots](https://github.com/ar51an/unbound-dashboard/tree/main/screenshots) dir to view the new layout.  
-  - Make sure you install the `musl` package on RaspberryPi. It is required since Grafana 10.2.3.  
-    > `sudo apt install musl`
-  - Old Loki config will not work. Make sure you use the latest Loki config provided in the release.
+  - Updated dashboard to support Grafana 11.1.0. Includes layout and functional changes.  
+  - Added support for Loki 3.1.0. Config changes to support new schema and removed deprecated options.  
+  - Use the v2.3 release Loki config with Loki 3.1.0.
+  - `musl` package is required. Check readme for instructions.  
   
-
 * **2.2 Release:**  
   Updated dashboard to support Grafana 10.1.0  
   unbound-exporter compiled with Golang 1.21.5  
