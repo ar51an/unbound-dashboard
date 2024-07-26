@@ -177,7 +177,7 @@
     > Hit ➟ `Save & test`
 
   * Dashboard, `unbound-dashboard.json` is available in the release. Click `Import` under `Dashboards`. Click `Upload JSON file`. Select `unbound-dashboard.json`. Add below options:  
-    > _Folder_ ➟ `General`  
+    > _Folder_ ➟ `Dashboards`  
     > Select _Prometheus_ ➟ `Data Source`  
     > Select _Loki_ ➟ `Data Source`  
     > Hit ➟ `Import`
