@@ -10,14 +10,7 @@
 
 <br/>
 
-![Dark](https://user-images.githubusercontent.com/11185794/220276925-6a1f4e0c-e6ec-443d-9ccf-cc3eb5da3405.png)
-
-<details>
-  <summary>Light Theme</summary>
-
-  ![Light](https://user-images.githubusercontent.com/11185794/220276981-82c05a6d-0c26-4473-a8aa-902b58237ad3.png)
-
-</details>
+![Latest](https://github.com/ar51an/unbound-dashboard/blob/2.3/screenshots/dashboard-2.3.png)
 
 <div align="center">
   <img src="https://user-images.githubusercontent.com/11185794/205388020-99c057ad-ee9d-440b-8df9-587f5c133f2e.png?raw=true" alt="divider"/>
@@ -36,7 +29,7 @@
 #### Specs:
 > |Grafana |Prometheus|Loki   |Go      |OS                           |HW                      |
 > |:-------|:---------|:------|:-------|:----------------------------|:-----------------------|
-> |`10.1.0`|`2.42.0`  |`2.8.4`|`1.21.5`|`raspios-bookworm-arm64-lite`|`Raspberry Pi 4 Model B`|
+> |`11.1.0`|`2.42.0`  |`3.1.0`|`1.21.5`|`raspios-bookworm-arm64-lite`|`Raspberry Pi 4 Model B`|
 
 #
 ### Steps
@@ -44,10 +37,15 @@
 #### ❯ Grafana
 * **Download:**  
   There are 2 versions **OSS** and **Enterprise**. OSS version is more than enough. Enterprise version installs too many extra packages (like unattended-upgrades and more). Below cmd downloads _Grafana OSS_ for arm64.
-  > `wget https://dl.grafana.com/oss/release/grafana_10.1.0_arm64.deb`
+  > `wget https://dl.grafana.com/oss/release/grafana_11.1.0_arm64.deb`
 
 * **Install:**
-  > `sudo dpkg -i grafana_10.1.0_arm64.deb`
+  > `sudo apt install musl`
+  
+  > `ℹ️` **Note:**  
+  > `musl` package is required since _Grafana 10.2.3_
+
+  > `sudo dpkg -i grafana_11.1.0_arm64.deb`
 
   > `ℹ️` **Note:**  
   > A tweaked `grafana.ini` is available in the release. It reduces memory footprint, removes usage collection, stops calls to grafana server/repo and has few more optimizations. You can use _grafana.ini_ **either** from the release **or** the default one. Default config is located at `/etc/grafana/grafana.ini`
@@ -125,12 +123,12 @@
 #### ❯ Loki
 * **Download:**  
   Download `Loki` and `Promtail`
-  > `curl -O -L "https://github.com/grafana/loki/releases/download/v2.8.4/loki_2.8.4_arm64.deb"`  
-  > `curl -O -L "https://github.com/grafana/loki/releases/download/v2.8.4/promtail_2.8.4_arm64.deb"`
+  > `curl -O -L "https://github.com/grafana/loki/releases/download/v3.1.0/loki_3.1.0_arm64.deb"`  
+  > `curl -O -L "https://github.com/grafana/loki/releases/download/v3.1.0/promtail_3.1.0_arm64.deb"`
 
 * **Install:**
-  > `sudo dpkg -i loki_2.8.4_arm64.deb`  
-  > `sudo dpkg -i promtail_2.8.4_arm64.deb`
+  > `sudo dpkg -i loki_3.1.0_arm64.deb`  
+  > `sudo dpkg -i promtail_3.1.0_arm64.deb`
 
 * **Logging:**  
   Enable Unbound logging.
@@ -179,7 +177,7 @@
     > Hit ➟ `Save & test`
 
   * Dashboard, `unbound-dashboard.json` is available in the release. Click `Import` under `Dashboards`. Click `Upload JSON file`. Select `unbound-dashboard.json`. Add below options:  
-    > _Folder_ ➟ `General`  
+    > _Folder_ ➟ `Dashboards`  
     > Select _Prometheus_ ➟ `Data Source`  
     > Select _Loki_ ➟ `Data Source`  
     > Hit ➟ `Import`
@@ -190,9 +188,10 @@
   How to ➟ Change grafana `landing page` to unbound dashboard **&** Switch between `Dark` (default) and `Light` theme.
 
   > Open Grafana UI ➟ `http://<RP-IP>:3000/`  
-  > Click `Preferences` under `Configuration`  
-  > Select `General/Unbound` in `Home Dashboard` drop down  
-  > Change `UI Theme`
+  > Click `Profile` under top right icon  
+  > Under `Preferences` select `General/Unbound` in `Home Dashboard` drop down  
+  > Change theme in `Interface theme` drop down  
+  > Hit `Save`
 
   There is an additional panel in the dashboard at the top right, not visible in the preview. It shows _unbound-exporter_ status and may be beneficial. If you are not interested in that simply remove it. Screenshot below:  
   > ![Metrics](https://user-images.githubusercontent.com/11185794/217952236-ef8ec0cb-a754-49d1-a1b4-d3a7cf5f49ef.png)

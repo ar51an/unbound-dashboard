@@ -1,4 +1,11 @@
 #### Release Notes:
+* **2.3 Release:**  
+  - Updated dashboard to support Grafana 11.1.0. Includes layout and functional changes.  
+  - Added support for Loki 3.1.0. Config changes to support new schema and removed deprecated options.  
+  - Use the v2.3 release Loki config with Loki 3.1.0.
+  - `musl` package is required. Check readme for instructions.
+  - The easiest way to update the dashboard in Grafana is by deleting the current one and then importing the new one from the latest release.  
+
 * **2.2 Release:**  
   Updated dashboard to support Grafana 10.1.0  
   unbound-exporter compiled with Golang 1.21.5  
