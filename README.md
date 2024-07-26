@@ -188,9 +188,10 @@
   How to ➟ Change grafana `landing page` to unbound dashboard **&** Switch between `Dark` (default) and `Light` theme.
 
   > Open Grafana UI ➟ `http://<RP-IP>:3000/`  
-  > Click `Preferences` under `Configuration`  
-  > Select `General/Unbound` in `Home Dashboard` drop down  
-  > Change `UI Theme`
+  > Click `Profile` under top right icon  
+  > Under `Preferences` select `General/Unbound` in `Home Dashboard` drop down  
+  > Change theme in `Interface theme` drop down  
+  > Hit `Save`
 
   There is an additional panel in the dashboard at the top right, not visible in the preview. It shows _unbound-exporter_ status and may be beneficial. If you are not interested in that simply remove it. Screenshot below:  
   > ![Metrics](https://user-images.githubusercontent.com/11185794/217952236-ef8ec0cb-a754-49d1-a1b4-d3a7cf5f49ef.png)
