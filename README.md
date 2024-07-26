@@ -10,7 +10,7 @@
 
 <br/>
 
-![Latest](https://github.com/ar51an/unbound-dashboard/blob/2.3/screenshots/dashboard-2.3.png)
+![Latest](https://github.com/ar51an/unbound-dashboard/blob/main/screenshots/dashboard-2.3.png)
 
 <div align="center">
   <img src="https://user-images.githubusercontent.com/11185794/205388020-99c057ad-ee9d-440b-8df9-587f5c133f2e.png?raw=true" alt="divider"/>
